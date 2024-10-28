@@ -3,7 +3,7 @@ import herocontent from '../imgs/hero-content.png'
 const Hero = () => {
   return (
 <div className="bg-hero h-[200px] w-full bg-cover bg-center">
-    <img src={herocontent} alt="" />
+    <img className='containerb' src={herocontent} alt="" />
 </div>
 
   )
