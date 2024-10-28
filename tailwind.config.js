@@ -8,6 +8,9 @@ export default {
     extend: {
       colors:{
         'katalog':'#70C05B',
+      },
+      backgroundImage:{
+        'hero':"url('../src/imgs/hero.png')"
       }
     },
   },
