@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { store } from '../store/store';
 
@@ -11,6 +11,44 @@ const Shop = () => {
     const tanlanganMahsulotlar = useSelector(
         (store) => store.tanlanganMahsulotlar.data
     );
+
+    const initialCounts = tanlanganMahsulotlar.reduce((acc, product) => {
+        acc[product.id] = 1; // Har bir mahsulot uchun boshlang'ich sanash qiymati
+        return acc;
+      }, {});
+      const [counts, setCounts] = useState(initialCounts);
+    // const decrement = () => {
+    //     if (count > 1) setCount(count - 1);
+    // };
+
+    // const increment = ()=>{
+        
+    //     setCount(prev => prev + 1);
+    // }
+
+    const increment = (id) => {
+        setCounts((prevCounts) => ({
+          ...prevCounts,
+          [id]: prevCounts[id] + 1,
+        }));
+      };
+    
+      const decrement = (id) => {
+        setCounts((prevCounts) => ({
+          ...prevCounts,
+          [id]: prevCounts[id] > 1 ? prevCounts[id] - 1 : 1,
+        }));
+      };
+    
+      const handleDelete = (id) => {
+        dispatch(deleteUserOfferLinkData(id));
+        setCounts((prevCounts) => {
+          const newCounts = { ...prevCounts };
+          delete newCounts[id];
+          return newCounts;
+        });
+      };
+    
   return (
     <div>
         <h2>shop</h2>
@@ -21,7 +59,7 @@ const Shop = () => {
                 {
                     tanlanganMahsulotlar.map((e)=>{
                         return(
-                            <li className='shadow-md flex justify-between  py-3  px-2 rounded '>
+                            <li key={e.id} className='shadow-md flex justify-between  py-3  px-2 rounded '>
                                 {/* left */}
                                 <div className='flex'>
                                     {/* img */}
@@ -41,9 +79,9 @@ const Shop = () => {
                                 <div className='flex  items-center'>
                                     {/* btn pilus minus */}
                                     <div className='bg-katalog py-2 px-3 flex  items-center text-white space-x-2 rounded mr-4'>
-                                        <button><img src={minus} alt="minus" /></button>
-                                        <span className='text-base '>1</span>
-                                        <button><img src={pilus} alt="pilus" /></button>
+                                        <button onClick={() => decrement(e.id)}><img src={minus} alt="minus" /></button>
+                                        <span className='text-base '>{counts[e.id]}</span>
+                                        <button onClick={() => increment(e.id)}><img src={pilus} alt="pilus" /></button>
                                     </div>
 
                                     {/* dastavka narx */}
