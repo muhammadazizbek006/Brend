@@ -52,7 +52,7 @@ const Header = () => {
           </li>
           {/* shop */}
           <li>
-            <NavLink className='flex flex-col items-center'>
+            <NavLink to='/shop' className='flex flex-col items-center'>
               <img src={shop} alt="shop" />
               <span>Корзина</span>
             </NavLink>

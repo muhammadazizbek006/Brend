@@ -12,7 +12,7 @@ export const products = [
       img:aksiya1,
       title:'Г/Ц Блинчики с мясом вес, Россия',
       asli:'44,50',
-      dastavka:'50,50',
+      dastavka:'89.12',
       aksiya:'-50%',
       yulduz:'⭐⭐⭐⭐⭐'
   },
@@ -21,7 +21,7 @@ export const products = [
       img:aksiya2,
       title:'Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...',
       asli:'44,50',
-      dastavka:'50,50',
+      dastavka:'89.12',
       aksiya:'-60%',
       yulduz:'⭐⭐⭐⭐⭐'
   },
@@ -30,7 +30,7 @@ export const products = [
       img:aksiya2,
       title:'Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...',
       asli:'44,50',
-      dastavka:'50,50',
+      dastavka:'89.12',
       aksiya:'-20%',
       yulduz:'⭐⭐⭐⭐⭐'
   },
@@ -39,7 +39,7 @@ export const products = [
       img:aksiya3,
       title:'Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...',
       asli:'44,50',
-      dastavka:'50,50',
+      dastavka:'89.12',
       aksiya:'-10%',
       yulduz:'⭐⭐⭐⭐⭐'
   },
@@ -48,7 +48,7 @@ export const products = [
       img:aksiya4,
       title:'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
       asli:'44,50',
-      dastavka:'50,50',
+      dastavka:'89.12',
       aksiya:'-5%',
       yulduz:'⭐⭐⭐⭐⭐'
   },
@@ -57,7 +57,7 @@ export const products = [
       img:aksiya5,
       title:'Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...',
       asli:'44,50',
-      dastavka:'50,50',
+      dastavka:'89.12',
       aksiya:'-20%',
       yulduz:'⭐⭐⭐⭐⭐'
   },
@@ -66,7 +66,7 @@ export const products = [
       img:aksiya1,
       title:'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
       asli:'44,50',
-      dastavka:'50,50',
+      dastavka:'89.12',
       aksiya:'-12%',
       yulduz:'⭐⭐⭐⭐⭐'
   },
@@ -75,7 +75,7 @@ export const products = [
       img:aksiya4,
       title:'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
       asli:'44,50',
-      dastavka:'50,50',
+      dastavka:'89.12',
       aksiya:'-15%',
       yulduz:'⭐⭐⭐⭐⭐'
   },
@@ -84,7 +84,7 @@ export const products = [
       img:aksiya6,
       title:'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
       asli:'44,50',
-      dastavka:'50,50',
+      dastavka:'89.12',
       aksiya:'-55%',
       yulduz:'⭐⭐⭐⭐⭐'
   },
@@ -93,7 +93,7 @@ export const products = [
       img:aksiya5,
       title:'Г/Ц Блинчики с мясом вес, Россия',
       asli:'44,50',
-      dastavka:'50,50',
+      dastavka:'89.12',
       aksiya:'-5%',
       yulduz:'⭐⭐⭐⭐⭐'
   },
