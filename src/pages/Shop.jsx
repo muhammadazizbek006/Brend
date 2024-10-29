@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { store } from '../store/store';
-
+import { deleteUserOfferLinkData } from "../store/slice/productsWishlistDataSlice";
 // imgs
 import minus  from '../imgs/minus.svg'
 import pilus  from '../imgs/plus.svg'
-
+import delet from '../imgs/delete.svg'
 const Shop = () => {
     const dispatch = useDispatch();
     const tanlanganMahsulotlar = useSelector(
@@ -85,7 +85,8 @@ const Shop = () => {
                                     </div>
 
                                     {/* dastavka narx */}
-                                    <p>{e.dastavka}</p>
+                                    <p className='mr-4'>{e.dastavka}</p>
+                                    <button onClick={() => handleDelete(e.id)}><img className='h-5' src={delet} alt="" /></button>
                                 </div>
                             </li>
                         )
