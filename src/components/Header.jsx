@@ -8,7 +8,9 @@ import search from "../imgs/search.svg";
 import like from "../imgs/like.svg";
 import shop from "../imgs/shop.svg";
 import zakaz from "../imgs/zakaz.svg";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from 'react-redux'
+import { store } from '../store/store';
+import { deleteUserOfferLinkData } from "../store/slice/productsWishlistDataSlice";
 const Header = () => {
   const dispatch = useDispatch();
   const tanlanganMahsulotlar = useSelector(
