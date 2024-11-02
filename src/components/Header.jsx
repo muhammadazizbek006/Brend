@@ -8,7 +8,13 @@ import search from "../imgs/search.svg";
 import like from "../imgs/like.svg";
 import shop from "../imgs/shop.svg";
 import zakaz from "../imgs/zakaz.svg";
+import { useDispatch, useSelector } from "react-redux";
 const Header = () => {
+  const dispatch = useDispatch();
+  const tanlanganMahsulotlar = useSelector(
+    (store) => store.tanlanganMahsulotlar.data
+  );
+
   return (
     <header className="py-4">
       <div className="containerb flex justify-between">
@@ -54,7 +60,7 @@ const Header = () => {
           <li>
             <NavLink to='/shop' className='flex flex-col items-center'>
               <img src={shop} alt="shop" />
-              <span>Корзина</span>
+              <span>Корзина {tanlanganMahsulotlar.length}</span>
             </NavLink>
           </li>
         </ul>
